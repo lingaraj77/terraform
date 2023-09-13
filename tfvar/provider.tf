@@ -6,6 +6,13 @@ terraform {
     }
   }
 }
+  # backend "s3"{
+
+  #   bucket = ""
+  #   key = "foreach-demo"
+  #   region = "us-east-1"
+  #   dyanomodb_table = " "
+  # }
 
 provider "aws" {
   # Configuration options
