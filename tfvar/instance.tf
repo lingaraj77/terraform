@@ -5,7 +5,7 @@ resource "aws_instance" "roboshop" {
   tags = {
     Name = each.key
   }
-
+}
   resource "aws_security_group" "allow_all" {
     name = var.sg_name
     description = "allowing all ports" # you can keep this in variable
