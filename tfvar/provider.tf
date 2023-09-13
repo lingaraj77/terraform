@@ -5,13 +5,13 @@ terraform {
       version = "5.15.0"
     }
   }
-}
 backend "s3" {
     bucket   = "roboshop-remote-state-1"
     key = "tfvars"
     region = "us-east-1"
     dynamodb_table = "roboshop-locking-1"
   }
+}
 #   backend "s3"{
 
 #     bucket = "roboshop-remote-state-1"
